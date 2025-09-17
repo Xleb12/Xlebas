@@ -3,8 +3,8 @@
   padding: 0;
 }
 .Документ {
-    max-width: 800;
-    margin: 0;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .Заголовок {
   display: flex;
@@ -33,4 +33,115 @@
 }
 .инфа {
     margin-top: 20px;
+}
+.стол {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.стол__хобби {
+  border: 1px solid #008000;
+  border-radius: 10px 0 0 10px;
+}
+.стол-социал {
+  border: 1px solid #008000;
+  border-radius: 0 10px 10px 0;
+}
+
+.стол__хобби-титул,
+.стол__социал-титул {
+  border-bottom: 1px solid green;
+  text-align: center;
+  color: green;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.стол__лист {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.стол__контент {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.стол__лист-слово:hover {
+  cursor: pointer;
+  color: green;
+}
+
+.стол__лист-слово>a {
+  text-decoration: none;
+  color: black;
+}
+
+.титул {
+  background: green;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 5px 0;
+  margin-top: 60px;
+}
+
+.техналогии {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.техналогии__вещь {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.техналогии__вещь>img {
+  border-radius: 50%;
+}
+
+.техналогии__вещь:hover {
+  box-shadow: 0 4px 20px 0 #5a9645;
+  cursor: pointer;
+  background: green;
+}
+
+.форма {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.форма__ввод,
+.форма__текст {
+  border: 1px solid #B8B8B8;
+  border-radius: 10px;
+  padding: 10px;
+}
+.форма__текст,
+.форма__батон {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.форма__батон {
+  width: fit-content;
+  /* justify-self: center; */
+  margin: 0 auto;
+  color: white;
+  background: green;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
 }
